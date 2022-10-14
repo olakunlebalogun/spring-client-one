@@ -13,20 +13,20 @@ spring:
     password: ola24oluwa
 
   boot:
-    admin:
-      client:
-        url: http://localhost:6060
+#    admin:
+#      client:
+#        url: http://localhost:6060
   application:
     name: Client One
-logging:
-  file:
-    name: client-one.log
-management:
-  endpoints:
-    health:
-      show-details: always
-    web:
-      exposure:
-        include: "*"
+#logging:
+#  file:
+#    name: client-one.log
+#management:
+#  endpoints:
+#    health:
+#      show-details: always
+#    web:
+#      exposure:
+#        include: "*"
 
 
