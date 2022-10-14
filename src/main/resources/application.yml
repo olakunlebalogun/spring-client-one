@@ -1,0 +1,32 @@
+server:
+  port: 6061
+spring:
+  jpa:
+    hibernate.ddl-auto: create
+    properties:
+      hibernate:
+        dialect = org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/admin_db
+    username: root
+    password: ola24oluwa
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:6060
+  application:
+    name: Client One
+logging:
+  file:
+    name: client-one.log
+management:
+  endpoints:
+    health:
+      show-details: always
+    web:
+      exposure:
+        include: "*"
+
+
